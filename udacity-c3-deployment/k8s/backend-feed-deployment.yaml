@@ -2,17 +2,17 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: backend-feed
+    service: backend-feed
   name: backend-feed
 spec:
+  replicas: 3
   selector:
     matchLabels:
-      app: backend-feed
-  replicas: 3
+      service: backend-feed
   template:
     metadata:
       labels:
-        app: backend-feed
+        service: backend-feed
     spec:
       containers:
         - image: m3trajetta/udagram-restapi-feed

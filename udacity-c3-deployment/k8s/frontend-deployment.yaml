@@ -2,17 +2,17 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: frontend
+    service: frontend
   name: frontend
 spec:
+  replicas: 2
   selector:
     matchLabels:
-      app: frontend
-  replicas: 2
+      service: frontend
   template:
     metadata:
       labels:
-        app: frontend
+        service: frontend
         api: external
     spec:
       containers:
@@ -28,4 +28,3 @@ spec:
             limits:
               memory: '1024Mi'
               cpu: '500m'
-      restartPolicy: Always

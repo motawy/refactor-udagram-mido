@@ -1,18 +1,18 @@
-version: "3"
+version: '3'
 services:
   reverseproxy:
     build:
       context: .
-    image: m3trajetta/udagram-reverseproxy 
+    image: m3trajetta/udagram-reverseproxy:latest
   backend_user:
     build:
       context: ../../udacity-c3-restapi-user
-    image: m3trajetta/udagram-restapi-user
+    image: m3trajetta/udagram-restapi-user:latest
   backend_feed:
     build:
-      context: ../../udacity-c3-restapi-feed  
-    image: m3trajetta/udagram-restapi-feed
+      context: ../../udacity-c3-restapi-feed
+    image: m3trajetta/udagram-restapi-feed:latest
   frontend:
     build:
-      context: ../../udacity-c3-frontend  
-    image: m3trajetta/udagram-frontend
+      context: ../../udacity-c3-frontend
+    image: m3trajetta/udagram-frontend:latest
