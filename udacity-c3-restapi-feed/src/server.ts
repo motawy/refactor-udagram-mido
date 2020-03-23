@@ -20,6 +20,7 @@ const c = config.dev;
   app.use(cors({
     credentials: true,
     origin: function (origin, callback) {
+      console.log("ORIGIN: "+ origin);
       if (!origin) return callback(null, true);
       if (allowedOrigins !== origin) {
         return callback(new Error('The CORS policy for this site does not allow access from the specified Origin.'), false);
