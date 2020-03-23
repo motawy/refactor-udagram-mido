@@ -12,7 +12,7 @@ A basic Ionic client web application which consumes the RestAPI Backend.
 
 > _tip_: this frontend is designed to work with the RestAPI backends). It is recommended you stand up the backend first, test using Postman, and then the frontend should integrate.
 
-### Installing Node and NPM
+### Installing Node and NPM (if using yarn just delete package-lock.json and run yarn)
 This project depends on Nodejs and Node Package Manager (NPM). Before continuing, you must download and install Node (NPM is included) from [https://nodejs.com/en/download](https://nodejs.org/en/download/).
 
 ### Installing Ionic Cli
